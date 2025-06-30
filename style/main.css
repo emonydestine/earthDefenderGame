@@ -1,0 +1,171 @@
+/* === Game UI Panel === */
+#ui {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 10;
+    color: #0ff;
+    font-family: 'Orbitron', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #0ff; 
+    border: 1px solid #0ff;
+    text-shadow: 0 0 6px #0ff;
+    width: fit-content;
+    max-width: 300px;
+}
+
+#homeImageContainer {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    display: block;
+    text-align: center;
+}
+
+#homeImage {
+    max-width: 69vw;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* === Game Canvas Area === */
+#gameCanvas {
+    display: block;
+    margin: 40px auto;
+    background-color: #000;
+    border: 2px solid #f0f;
+    box-shadow: 0 0 20px #f0f;
+}
+#gameContainer {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#gameOverButtons {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#gameOverButtons button {
+    background-color: black;
+    border: 2px solid #fff;
+    color: #0ff;
+    padding: 10px 28px;
+    font-size: 18px;
+    font-family: 'Orbitron', sans-serif;
+    border-radius: 8px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px #0ff;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+#gameOverButtons button:hover {
+    background-color: #0ff;
+    color: black;
+    box-shadow: 0 0 20px #f0f, 0 0 40px #f0f inset;
+    border-color: #f0f;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#gameOverText {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 48px;
+    color: red;
+    text-shadow: 0 0 10px red;
+    z-index: 25;
+    display: none;
+    animation: flashText 1s infinite;
+}
+
+@keyframes flashText {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+/* === Control Buttons Container === */
+#controls {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #111;
+    padding: 10px;
+    text-align: center;
+    z-index: 15;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px #0ff;
+}
+
+/* === Button Styles === */
+#controls button {
+    background-color: #0ff;
+    border: 2px solid #fff;
+    color: #111;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0 0 8px #0ff;
+    transition: all 0.3s ease;
+}
+
+#controls button:hover {
+    background-color: #0cc;
+    color: white;
+    box-shadow: 0 0 15px #f0f;
+    border-color: #f0f;
+}
+
+.neonButton {
+    background: black;
+    border: 2px solid cyan;
+    color: cyan;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    #controls button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    #ui {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #ui h1 {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" /> 
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="EMony Destine" />
+        <meta name="description" content="Play Earth Defender - a browser-based alien shooter game. Protect Earth from invasion, blast waves of enemies, and rise through the ranks!" />
+
+        <title> Earth Defender | Shoot aliens, Learn Code</title>
+
+        <!-- Open Graph (Social Sharing Preview) -->
+        <meta property="og:title" content="Earth Defender | Arcade Game + Code kit" />
+        <meta property="og:description" content="Play Earth Defender - a retro arcade shooter 
+        and coding tutorial all in one. Learn how it's built or get the full starter kit." />
+        <meta property="og:type" content="website" />
+        <!--meta property="og:image" content="https://emonydestine.com" filling website once active -->
+
+        <link rel="stylesheet" href="style/main.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+    </head>
+<body>
+    <!-- Game UI -->
+     <div id="ui">
+        <h1>Earth Defender :
+            Alien Wave
+        </h1>
+        <p>Press Start to begin!</p>
+     </div>
+
+     <div id="homeImageContainer">
+      <img id="homeImage" src="assets/images/startScreen.png" alt="Earth Defender Logo">
+    </div>
+    
+     <div id="gameOverText">GAME OVER</div>
+
+     <!-- Canvas Area -->
+     <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+     <!-- Buttons -->
+     <div id="controls">
+        <button id="startButton">Start</button>
+        <button id="pauseButton">Pause</button>
+        <button id="quitButton" style="display: none;">Quit</button>
+     </div>
+
+     <div id="gameOverButtons">
+        <button id="homeButton">Home</button>
+        <button id="restartButton">Restart</button>
+     </div>
+
+     <!-- Script Files -->
+     <script type ="module" src="js/main.js" defer></script>
+</body>
+</html>
