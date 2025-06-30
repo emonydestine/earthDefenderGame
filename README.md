@@ -36,8 +36,8 @@
 
 | Action | Key |
 |--------|-----|
-| Move Left | ⬅️ Left Arrow or `A` |
-| Move Right | ➡️ Right Arrow or `D` |
+| Move Left | ⬅️ Left Arrow |
+| Move Right | ➡️ Right Arrow |
 | Shoot | `Spacebar` |
 | Pause / Resume | `Pause` button |
 | Quit Game | `Quit` button |
